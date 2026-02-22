@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Whoacab
 
-## Getting Started
+**Spend one minute a day to improve your vocabulary.**
 
-First, run the development server:
+Whoacab is a daily gamified word-learning app where users learn a new word, prove they understand it in context, and build streaks over time.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Think: **Wordle + Duolingo + Vocabulary.com**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Core Concept
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Whoacab makes vocabulary building simple, competitive, and consistent.
 
-## Learn More
+Each day, users complete a short challenge (1–2 minutes) designed to reinforce contextual understanding rather than rote memorization. Progress is tracked through streaks, points, badges, and a global leaderboard.
 
-To learn more about Next.js, take a look at the following resources:
+The goal is to make learning feel like a game... not homework.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Core Features
 
-## Deploy on Vercel
+### Daily Word Challenge
+- Three difficulty tiers: **Easy**, **Medium**, and **Hard**
+- All users see the same word per difficulty level each day
+- Encourages shared learning and friendly competition
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Context-Based Mini Test
+- One multiple-choice question
+- Users must select the sentence that correctly uses the word
+- Reinforces sentence structure and contextual understanding
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Gamified Scoring System
+- Points awarded for participation
+- Multipliers based on:
+  - Difficulty level
+  - Streak length
+  - Accuracy
+- Example: **Hard word + 30-day streak + correct answer = highest multiplier**
+
+### Leaderboards & Badges
+- Global leaderboard for competitive learners
+- Achievement badges for milestones
+- Streak tracking to encourage daily consistency
+
+### Microlearning Design
+- 1–2 minutes per day
+- Minimal friction
+- Designed for modern attention spans
+
+---
+
+## User Personas
+
+### Akash — The Educator
+
+Akash is a 28-year-old English teacher noticing students struggle with reading comprehension, contextual understanding, and attention span. He needs an engaging tool that reinforces language skills without feeling like extra homework.
+
+**Why Whoacab works for Akash:**
+
+- Short daily challenges fit into classroom warm-ups
+- Context-based testing reinforces real sentence structure
+- Difficulty tiers allow differentiated learning
+- Participation points reduce fear of failure
+- Game-like design keeps students engaged
+
+---
+
+### Joe — The Lifelong Learner
+
+Joe is a 65-year-old retiree who wants to stay mentally active without frustration or pressure. He prefers simplicity and low time commitment.
+
+**Why Whoacab works for Joe:**
+
+- Only 1–2 minutes per day required
+- Pressure-free participation scoring
+- Simple, intuitive interface
+- Streaks provide gentle motivation
+- Medium difficulty keeps learning stimulating but accessible
+
+---
+
+### Connie — The Academic Learner
+
+Connie is a 19-year-old college student who wants to strengthen her vocabulary and become a more confident writer. She struggles with sticking to traditional vocabulary tools.
+
+**Why Whoacab works for Connie:**
+
+- Application-based learning improves real writing ability
+- Hard difficulty tier supports academic vocabulary growth
+- Competitive leaderboards drive consistency
+- Streaks and badges reinforce habit formation
+- Time-efficient design fits into a busy academic schedule
+
+---
+
+## Vision
+
+Whoacab aims to transform vocabulary building from a chore into a daily habit. By combining microlearning, contextual reinforcement, and gamification, the platform encourages consistent growth in just one minute per day.
+
+---
+
+## License
+
+This software is proprietary and not licensed for public or commercial use.  
+Unauthorized use, modification, or distribution is strictly prohibited.
