@@ -15,11 +15,11 @@ export default function WordCard({
     <div className="bg-[#D9D4FF] rounded-2xl p-6 border-b-3 border border-[#9588ff]">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl text-black font-serif font-bold">{word}</h2>
-        <span className="text-sm text-black font-serif">
+        <span className="text-black font-serif">
           {phonetic} <em>{partOfSpeech}</em>
         </span>
       </div>
-      <p className="mt-4 text-black font-serif">{definition}</p>
+      <p className="text-lg mt-4 text-black font-serif">{definition}</p>
     </div>
   );
 }

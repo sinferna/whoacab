@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Gluten } from "next/font/google";
+import { Geist, Geist_Mono, Gluten, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,6 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const gluten = Gluten({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
+
+export const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
