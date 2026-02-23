@@ -3,7 +3,7 @@ import WordCard from "./components/WordCard";
 import DifficultyBadge from "./components/DifficultyBadge";
 import QuestionSection from "./components/QuizSelection";
 import CheckButton from "./components/CheckButton";
-import BottomNav from "./BottomNavigation";
+import BottomNav from "./components/BottomNavigation";
 
 export default function WordOfDayPage() {
   return (
