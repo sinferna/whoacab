@@ -16,7 +16,7 @@ Each day, users complete a short challenge (1–2 minutes) designed to reinforce
 
 The goal is to make learning feel like a game... not homework.
 
-![Homepage prototype](https://imgur.com/a/hopR2qU)
+![Homepage prototype](https://i.imgur.com/IvtHbEr.png)
 
 ---
 
