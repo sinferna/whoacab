@@ -7,7 +7,7 @@ import BottomNav from "./BottomNavigation";
 
 export default function WordOfDayPage() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center pb-24">
+    <div className="min-h-screen bg-white flex flex-col items-center pb-24">
       <div className="w-full max-w-md px-4 pt-6">
         <StreakHeader streak={6} progress={0.8} />
         <DifficultyBadge difficulty="HARD" />
@@ -18,7 +18,9 @@ export default function WordOfDayPage() {
           definition="using very few words in speech or writing."
         />
         <QuestionSection />
-        <CheckButton />
+        <div className="flex justify-center">
+            <CheckButton />
+        </div>
       </div>
       <BottomNav />
     </div>

@@ -1,4 +1,5 @@
 import OptionItem from "./OptionItem";
+import { gluten } from "../layout";
 
 export default function QuizSelection() {
   const options = [
@@ -10,13 +11,13 @@ export default function QuizSelection() {
 
   return (
     <div className="mt-8">
-      <h3 className="text-center text-black font-bold mb-4">
+      <h3 className={`text-center text-black text-xl mb-3 ${gluten.className}`}>
         WHICH SENTENCE USES IT CORRECTLY?
       </h3>
 
-      <div className="space-y-3">
+      <div className="space-y-2">
         {options.map((option, index) => (
-          <OptionItem key={index} label={String.fromCharCode(97 + index)} text={option} />
+          <OptionItem key={index} label={`${String.fromCharCode(97 + index)})`} text={option} />
         ))}
       </div>
     </div>

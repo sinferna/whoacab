@@ -5,8 +5,8 @@ interface Props {
 
 export default function OptionItem({ label, text }: Props) {
   return (
-    <div className="flex items-start text-black gap-3 border rounded-lg p-4 bg-white shadow-sm cursor-pointer hover:bg-gray-200">
-      <div className="w-5 h-5 border rounded-full mt-1" />
+    <div className="flex items-start text-black gap-3 border rounded-lg border-b-3 border-[#AAAAAA] p-2 bg-white shadow-sm cursor-pointer hover:bg-gray-200">
+      <div className="w-10 aspect-square border-1 border-[#AAAAAA] rounded-full flex-shrink-0 mt-1" />
       <p>
         {label} {text}
       </p>

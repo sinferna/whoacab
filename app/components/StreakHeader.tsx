@@ -6,7 +6,7 @@ interface Props {
 export default function StreakHeader({ streak, progress }: Props) {
   return (
     <div className="mb-4">
-      <p className="text-sm font-semibold text-blue-500">
+      <p className="text-sm font-semibold text-[#9588FF]">
         {streak} DAY STREAK
       </p>
       <div className="w-full h-3 bg-gray-300 rounded-full mt-2">
