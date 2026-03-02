@@ -15,7 +15,7 @@ interface Props {
 export default function QuizSelection({ question, selected, setSelected, checked }: Props) {
   return (
     <div className="mt-8">
-      <h3 className={`text-center text-black text-xl mb-3 ${gluten.className}`}>
+      <h3 className={`text-center text-black text-xl mb-1 ${gluten.className}`}>
         WHICH SENTENCE USES IT CORRECTLY?
       </h3>
 

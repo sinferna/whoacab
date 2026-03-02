@@ -2,8 +2,8 @@ import { Geist, Geist_Mono, Gluten, Instrument_Sans } from "next/font/google";
 
 export const difficultyBadgeStyles = {
   wrapper: "flex justify-center",
-  badge: "bg-[#9588ff] rounded-t-full px-10 pt-8 pb-4 text-center shadow-md",
-  difficulty: "text-5xl font-bold text-red-500 drop-shadow-md/85",
+  badge: "bg-[#9588ff] rounded-t-full px-6 pt-8 pb-2 mt-4 text-center shadow-md",
+  difficulty: "text-4xl font-bold text-red-500 drop-shadow-md/85",
   label: "text-white text-xl",
 };
 
@@ -12,27 +12,27 @@ export const wordCardStyles = {
   header: "flex justify-between items-center",
   word: "text-2xl text-black font-serif font-bold",
   phonetic: "text-black font-serif",
-  definition: "text-lg mt-4 text-black font-serif",
+  definition: "text-m mt-4 text-black font-serif",
 };
 
 export const optionStyles = {
   // wrapper
-  base: "group flex items-center gap-3 rounded-lg border border-b-3 p-2 cursor-pointer select-none transition-all duration-150 ease-out shadow-sm",
-  baseChecked: "flex items-center gap-3 rounded-lg border border-b-3 p-2 cursor-default select-none transition-all duration-150 ease-out shadow-sm",
+  base: "group flex items-center gap-3 rounded-lg border border-b-3 p-1 cursor-pointer select-none transition-all duration-150 ease-out shadow-sm",
+  baseChecked: "flex items-center gap-3 rounded-lg border border-b-3 p-1 cursor-default select-none transition-all duration-150 ease-out shadow-sm",
   idle: "bg-white border-[#AAAAAA] text-black",
   idleHover: "bg-white border-[#AAAAAA] text-black hover:bg-[#ffefd8] hover:border-[#FF9600]",
   selected: "bg-[#ffefd8] border-[#FF9600] text-black",
-  correct: "bg-[#F0FFF4] border-[#50C341] text-black",
-  wrong: "bg-[#FFF5F5] border-[#FF4C46] text-black",
+  correct: "bg-[#E1FEE9] border-[#74BF6A] text-black",
+  wrong: "bg-[#FFE5E5] border-[#F45050] text-black",
   pressed: "translate-y-[2px] border-b-1",
 
   // badge
-  badgeBase: "w-10 aspect-square flex-shrink-0 rounded-full border flex items-center justify-center text-m transition-all duration-150 mt-1",
+  badgeBase: "w-10 ml-1 aspect-square flex-shrink-0 rounded-full border flex items-center justify-center text-m transition-all duration-150",
   badgeIdle: "border-[#AAAAAA] bg-white text-[#888] group-hover:border-[#FF9600] group-hover:text-[#FF9600]",
   badgeIdleHover: "border-[#AAAAAA] bg-white text-[#888] group-hover:border-[#FF9600] group-hover:text-[#FF9600]",
   badgeSelected: "border-[#FF9600] bg-white",
-  badgeCorrect: "border-[#50C341] bg-white",
-  badgeWrong: "border-[#FF4C46] bg-white",
+  badgeCorrect: "border-[#74BF6A] bg-white",
+  badgeWrong: "border-[#F45050] bg-white",
 };
 
 export const checkButtonStyles = {

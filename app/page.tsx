@@ -4,7 +4,7 @@ import WordCard from "./components/WordCard";
 import DifficultyBadge from "./components/DifficultyBadge";
 import QuizSelection from "./components/QuizSelection";
 import CheckButton from "./components/CheckButton";
-import BottomNav from "./components/BottomNavigation";
+import TopNavigation from "./components/TopNavigation";
 import Toast from "./components/Toast";
 import confetti from "canvas-confetti";
 import { Quiz, Word } from "./lib/types";
@@ -46,7 +46,8 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center pb-24">
-      <div className="w-full max-w-md px-4 pt-6">
+      <TopNavigation />
+      <div className="w-full max-w-md pt-12">
         <DifficultyBadge difficulty="HARD" />
         <WordCard word={word}/>
         <QuizSelection
@@ -73,7 +74,6 @@ export default function Page() {
         message="Please select an option first."
         visible={error}
       />
-      <BottomNav />
     </div>
   );
 }

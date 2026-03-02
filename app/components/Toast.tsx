@@ -12,7 +12,7 @@ export default function Toast({ message, visible }: Props) {
   if (!visible) return null;
 
   return (
-    <div className={`${instrumentSans.className} fixed bottom-32 left-1/2 -translate-x-1/2 text-red-500 text-sm px-4 py-2`}>
+    <div className={`${instrumentSans.className} text-red-500 text-sm px-4 py-2`}>
       {message}
     </div>
   );
