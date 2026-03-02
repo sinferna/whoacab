@@ -98,7 +98,7 @@ Connie is a 19-year-old college student who wants to strengthen her vocabulary a
 
 ## Vision
 
-Whoacab aims to transform vocabulary building from a chore into a daily habit. By combining microlearning, contextual reinforcement, and gamification, the platform encourages consistent growth in just one minute per day.
+Whoacab aims to transform vocabulary building from a chore into a daily habit. By combining microlearning, contextual reinforcement, and gamification, the platform encourages consistent growth in just one minute per day. It is still under development and will be released by Fall 2026.
 
 ---
 
