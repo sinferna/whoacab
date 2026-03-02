@@ -1,16 +1,63 @@
-import { instrumentSans } from "../layout";
+"use client";
+
+import { useState } from "react";
+import { instrumentSans, optionStyles } from "../lib/theme";
 
 interface Props {
   label: string;
   text: string;
+  isSelected?: boolean;
+  isCorrect?: boolean;
+  isWrong?: boolean;
+  checked?: boolean;
+  onClick?: () => void;
 }
 
-export default function OptionItem({ label, text }: Props) {
+export default function OptionItem({
+  label,
+  text,
+  isSelected = false,
+  isCorrect = false,
+  isWrong = false,
+  checked = false,
+  onClick,
+}: Props) {
+  const [pressed, setPressed] = useState(false);
+
+  const wrapperState = isCorrect
+    ? optionStyles.correct
+    : isWrong
+    ? optionStyles.wrong
+    : isSelected
+    ? optionStyles.selected
+    : checked
+    ? optionStyles.idle
+    : optionStyles.idleHover;
+
+  const badgeState = isCorrect
+    ? optionStyles.badgeCorrect
+    : isWrong
+    ? optionStyles.badgeWrong
+    : isSelected
+    ? optionStyles.badgeSelected
+    : checked
+    ? optionStyles.badgeIdle
+    : optionStyles.badgeIdleHover;
+
   return (
-    <div className="flex items-start text-black gap-3 border rounded-lg border-b-3 border-[#AAAAAA] p-2 bg-white shadow-sm cursor-pointer hover:bg-gray-200">
-      <div className="w-10 aspect-square border-1 border-[#AAAAAA] rounded-full flex-shrink-0 mt-1" />
-      <p className={`text-m ${instrumentSans.className}`}>
-        {label} {text}
+    <div className={`${checked ? optionStyles.baseChecked : optionStyles.base} ${wrapperState} ${pressed && !checked ? optionStyles.pressed : ""}`}
+      onClick={onClick}
+      onMouseDown={() => setPressed(true)}
+      onMouseUp={() => setPressed(false)}
+      onMouseLeave={() => setPressed(false)}
+    >
+      <div className={`${optionStyles.badgeBase} ${badgeState}`}>
+        {isCorrect && <div className="w-7 h-7 rounded-full bg-[#50C341]" />}
+        {isWrong && <div className="w-7 h-7 rounded-full bg-[#FF4C46]" />}
+        {isSelected && !isCorrect && !isWrong && <div className="w-7 h-7 rounded-full bg-[#FF9600]" />}
+      </div>
+      <p className={`${instrumentSans.className} text-base font-m`}>
+        <span>{label}</span> {text}
       </p>
     </div>
   );

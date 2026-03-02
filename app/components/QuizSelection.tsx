@@ -1,14 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import OptionItem from "./OptionItem";
-import { gluten } from "../layout";
+import { gluten } from "../lib/theme";
+import { Quiz } from "../lib/types";
 
-export default function QuizSelection() {
-  const options = [
-    "She gave a laconic speech that lasted over two hours and covered every detail.",
-    "The laconic painting was filled with bright and vibrant colors.",
-    "They celebrated laconically with loud music and long speeches.",
-    "His laconic reply of “Fine.” ended the conversation quickly.",
-  ];
+interface Props {
+    question: Quiz;
+    selected: number | null;
+    setSelected: (i: number) => void;
+    checked: boolean;
+  }
 
+export default function QuizSelection({ question, selected, setSelected, checked }: Props) {
   return (
     <div className="mt-8">
       <h3 className={`text-center text-black text-xl mb-3 ${gluten.className}`}>
@@ -16,8 +20,17 @@ export default function QuizSelection() {
       </h3>
 
       <div className="space-y-2">
-        {options.map((option, index) => (
-          <OptionItem key={index} label={`${String.fromCharCode(97 + index)})`} text={option} />
+        {question.options.map((option, index) => (
+          <OptionItem 
+            key={index} 
+            checked={checked}
+            label={`${String.fromCharCode(97 + index)})`} 
+            text={option}
+            isSelected={!checked && selected === index}
+            isCorrect={checked && index === question.correctIndex}
+            isWrong={checked && selected === index && index !== question.correctIndex}
+            onClick={() => !checked && setSelected(index)}
+          />
         ))}
       </div>
     </div>

@@ -1,9 +1,26 @@
-import { gluten } from "../layout";
+"use client";
 
-export default function CheckButton() {
+import { useState } from "react";
+import { gluten, checkButtonStyles } from "../lib/theme";
+
+interface Props {
+  onClick: () => void;
+  checked?: boolean;
+}
+
+export default function CheckButton({ onClick, checked}: Props) {
+  const [pressed, setPressed] = useState(false);
+
   return (
-    <button className={`w-60 mt-8 p-2 text-lg rounded-full border-[#6F5DFF] border-b-3 bg-[#9588FF] text-white ${gluten.className}`}>
-        CHECK
+    <button
+      className={`${checked ? checkButtonStyles.checked : `${checkButtonStyles.base} ${pressed ? checkButtonStyles.pressed : ""}`} ${gluten.className}`}
+      style={{ borderBottomWidth: checked || pressed ? "1px" : "3px" }}
+      onMouseUp={() => setPressed(false)}
+      onMouseLeave={() => setPressed(false)}
+      onClick={onClick}
+      disabled={checked}
+    >
+      CHECK
     </button>
   );
 }

@@ -1,4 +1,4 @@
-import { gluten } from "../layout";
+import { gluten } from "../lib/theme";
 
 interface Props {
   difficulty: "EASY" | "MEDIUM" | "HARD";
