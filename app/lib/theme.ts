@@ -1,5 +1,20 @@
 import { Geist, Geist_Mono, Gluten, Instrument_Sans } from "next/font/google";
 
+export const difficultyBadgeStyles = {
+  wrapper: "flex justify-center",
+  badge: "bg-[#9588ff] rounded-t-full px-10 pt-8 pb-4 text-center shadow-md",
+  difficulty: "text-5xl font-bold text-red-500 drop-shadow-md/85",
+  label: "text-white text-xl",
+};
+
+export const wordCardStyles = {
+  base: "bg-[#D9D4FF] rounded-2xl p-6 border-b-3 border border-[#9588ff]",
+  header: "flex justify-between items-center",
+  word: "text-2xl text-black font-serif font-bold",
+  phonetic: "text-black font-serif",
+  definition: "text-lg mt-4 text-black font-serif",
+};
+
 export const optionStyles = {
   // wrapper
   base: "group flex items-center gap-3 rounded-lg border border-b-3 p-2 cursor-pointer select-none transition-all duration-150 ease-out shadow-sm",

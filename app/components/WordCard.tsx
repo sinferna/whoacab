@@ -1,25 +1,18 @@
+import { wordCardStyles } from "../lib/theme";
+import { Word } from "../lib/types";
+
 interface Props {
-  word: string;
-  phonetic: string;
-  partOfSpeech: string;
-  definition: string;
+  word: Word;
 }
 
-export default function WordCard({
-  word,
-  phonetic,
-  partOfSpeech,
-  definition,
-}: Props) {
+export default function WordCard({ word }: Props) {
   return (
-    <div className="bg-[#D9D4FF] rounded-2xl p-6 border-b-3 border border-[#9588ff]">
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl text-black font-serif font-bold">{word}</h2>
-        <span className="text-black font-serif">
-          {phonetic} <em>{partOfSpeech}</em>
-        </span>
+    <div className={wordCardStyles.base}>
+      <div className={wordCardStyles.header}>
+        <h2 className={wordCardStyles.word}>{word.word}</h2>
+        <span className={wordCardStyles.phonetic}>{word.phonetic} <em>{word.partOfSpeech}</em></span>
       </div>
-      <p className="text-lg mt-4 text-black font-serif">{definition}</p>
+      <p className={wordCardStyles.definition}>{word.definition}</p>
     </div>
   );
 }
