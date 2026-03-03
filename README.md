@@ -65,7 +65,7 @@ The foundational interactive layer of Whoacab has been implemented using a hardc
 - Answer selection logic
 - Input validation preventing empty submissions
 - “Check” action handling
-- Correct / incorrect feedback display
+- Correct/incorrect feedback display
 - Post-answer definition reinforcement
 
 This ensures the full learning loop works end-to-end before database integration.
@@ -118,7 +118,7 @@ Next step: Transition from hardcoded state to database-backed daily word system.
 
 ### User System
 - Authentication (OAuth + email)  
-- Role-based access (admin / reviewer / user)  
+- Role-based access (admin/reviewer/user)  
 - Persistent streak tracking  
 - Historical performance analytics  
 - User progression metrics (accuracy rate, difficulty trends)  
@@ -172,7 +172,7 @@ This hybrid AI + manual review system ensures scalability without sacrificing ac
 
 - Classroom mode with group-based leaderboards  
 - Support for multiple languages
-- Microtransactions for access to more words daily
+- In-app purchases for access to more words
 - Expansion to different subjects (e.g. biology, math, history, etc.)
 - Mobile-native deployment  
 
