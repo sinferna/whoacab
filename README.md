@@ -56,7 +56,7 @@ The goal is to make learning feel like a game... not homework.
 
 ## Current Progress
 
-### Phase 1 — Frontend Logic Implementation (Completed)
+### Phase 1: Frontend Logic Implementation (Completed)
 
 The foundational interactive layer of Whoacab has been implemented using a hardcoded word and quiz flow to validate the full user experience before integrating backend systems.
 
@@ -65,7 +65,7 @@ The foundational interactive layer of Whoacab has been implemented using a hardc
 - Answer selection logic
 - Input validation preventing empty submissions
 - “Check” action handling
-- Correct / incorrect feedback display
+- Correct/incorrect feedback display
 - Post-answer definition reinforcement
 
 This ensures the full learning loop works end-to-end before database integration.
