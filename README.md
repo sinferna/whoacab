@@ -54,8 +54,6 @@ The goal is to make learning feel like a game... not homework.
 
 ---
 
----
-
 ## Current Progress
 
 ### Phase 1 — Frontend Logic Implementation (Completed)
