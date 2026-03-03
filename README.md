@@ -1,10 +1,11 @@
 # Whoacab
 
-**Spend one minute a day to improve your vocabulary.**
+**A gamified, microlearning vocabulary platform built for daily contextual reinforcement.**
 
-Whoacab is a daily gamified word-learning app where users learn a new word, prove they understand it in context, and build streaks over time.  
+Whoacab delivers a single daily word challenge across three difficulty tiers. Users demonstrate contextual understanding through a short assessment while earning streaks, badges and leaderboard rankings.
 
-Think: **Wordle + Duolingo + Vocabulary.com**.
+Concept:
+Wordle × Duolingo × Vocabulary.com. Optimized for 1–2 minutes per day.
 
 ---
 
@@ -16,7 +17,8 @@ Each day, users complete a short challenge (1–2 minutes) designed to reinforce
 
 The goal is to make learning feel like a game... not homework.
 
-![Homepage prototype](https://i.imgur.com/IvtHbEr.png)
+![Homepage prototype](https://i.imgur.com/Qa2cqli.png)
+![Points overlay after completing the challenge](https://i.imgur.com/wFodlqC.png)
 
 ---
 
@@ -52,55 +54,76 @@ The goal is to make learning feel like a game... not homework.
 
 ---
 
-## User Personas
+---
 
-### Akash — The Educator
+## Current Progress
 
-Akash is a 28-year-old English teacher noticing students struggle with reading comprehension, contextual understanding, and attention span. He needs an engaging tool that reinforces language skills without feeling like extra homework.
+### Phase 1 — Frontend Logic Implementation (Completed)
 
-**Why Whoacab works for Akash:**
+The foundational interactive layer of Whoacab has been implemented using a hardcoded word and quiz flow to validate the full user experience before integrating backend systems.
 
-- Short daily challenges fit into classroom warm-ups
-- Context-based testing reinforces real sentence structure
-- Difficulty tiers allow differentiated learning
-- Participation points reduce fear of failure
-- Game-like design keeps students engaged
+#### Core Interaction Flow
+- Hardcoded word and contextual multiple-choice question stored in component state
+- Answer selection logic
+- Input validation preventing empty submissions
+- “Check” action handling
+- Correct / incorrect feedback display
+- Post-answer definition reinforcement
+
+This ensures the full learning loop works end-to-end before database integration.
 
 ---
 
-### Joe — The Lifelong Learner
+### UI/UX Enhancements Implemented
 
-Joe is a 65-year-old retiree who wants to stay mentally active without frustration or pressure. He prefers simplicity and low time commitment.
+#### Animations
+- Interactive selection feedback
+- Button press states
+- Visual response transitions
+- Points overlay animation on completion
 
-**Why Whoacab works for Joe:**
+#### Detailed CSS Styling
+- Custom button states
+- Difficulty tier visual differentiation
+- Responsive layout structure
+- Styled feedback states (correct / incorrect)
 
-- Only 1–2 minutes per day required
-- Pressure-free participation scoring
-- Simple, intuitive interface
-- Streaks provide gentle motivation
-- Medium difficulty keeps learning stimulating but accessible
-
----
-
-### Connie — The Academic Learner
-
-Connie is a 19-year-old college student who wants to strengthen her vocabulary and become a more confident writer. She struggles with sticking to traditional vocabulary tools.
-
-**Why Whoacab works for Connie:**
-
-- Application-based learning improves real writing ability
-- Hard difficulty tier supports academic vocabulary growth
-- Competitive leaderboards drive consistency
-- Streaks and badges reinforce habit formation
-- Time-efficient design fits into a busy academic schedule
+#### Validation Layer
+- Prevents submission without selecting an answer
+- User feedback for invalid input attempts
 
 ---
 
-## Vision
+### Gamification Overlay (Pre-Auth State)
 
-Whoacab aims to transform vocabulary building from a chore into a daily habit. By combining microlearning, contextual reinforcement, and gamification, the platform encourages consistent growth in just one minute per day. It is still under development and will be released by Fall 2026.
+A functional points overlay system has been implemented:
+
+- Appears immediately after challenge completion
+- Displays earned points
+- Visually reinforces reward loop
+- Prompts user to log in to begin persistent point tracking
+
+This creates motivation before authentication is required and prepares the system for future integration with the user database.
 
 ---
+
+This phase validates:
+- Core interaction mechanics  
+- UX feedback loops  
+- Gamification psychology  
+- Frontend architecture readiness for backend integration  
+
+Next step: Transition from hardcoded state to database-backed daily word system.
+
+---
+
+## Long-Term Vision
+
+- Classroom mode with group-based leaderboards  
+- Support for multiple languages
+- Microtransactions for access to more words daily
+- Expansion to different subjects (e.g. biology, math, history, etc.)
+- Mobile-native deployment  
 
 ## License
 
