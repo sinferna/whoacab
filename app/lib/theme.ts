@@ -36,9 +36,9 @@ export const optionStyles = {
 };
 
 export const checkButtonStyles = {
-  base: "w-60 mt-8 p-2 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-pointer select-none transition-all duration-150 ease-out",
+  base: "w-60 mt-8 p-2 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-pointer select-none transition-all duration-150 ease-out hover:bg-[#A99EFF]",
   pressed: "translate-y-[2px]",
-  checked: "w-60 mt-8 p-2 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-default select-none opacity-90",
+  checked: "w-60 mt-8 p-2 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-default select-none",
 };
 
 const geistSans = Geist({

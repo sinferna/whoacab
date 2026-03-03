@@ -9,3 +9,12 @@ export interface Word {
   partOfSpeech: string;
   definition: string;
 }
+
+export type Difficulty = "EASY" | "MEDIUM" | "HARD";
+
+export interface PointsResult {
+  earned: number;
+  difficulty: Difficulty;
+  streakDays?: number;
+  correct: boolean;
+}
