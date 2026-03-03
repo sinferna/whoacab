@@ -28,7 +28,7 @@ export default function TopNavigation({ activePage = "home" }: Props) {
     <nav className="fixed top-0 w-full bg-[#9588FF] py-1 z-40">
       <div className="w-full px-8 flex items-center justify-between">
         <Image src={logo} alt="Whoacab logo" width={148} height={40} quality={100} />
-        <div className="flex gap-8 text-2xl items-center">
+        <div className="flex gap-8 mt-1 text-2xl items-center">
           {navItems.map((item) => (
         <div
           key={item.page}
@@ -36,7 +36,7 @@ export default function TopNavigation({ activePage = "home" }: Props) {
           onClick={() => router.push(item.href)}
         >
           <span>{item.icon}</span>
-          <div className={`w-3 h-[5] mt-[2px] ${item.page === activePage ? "rounded-t-full bg-white/100" : ""}`} />
+          <div className={`w-2 h-[4] mt-[2px] ${item.page === activePage ? "rounded-t-full bg-white/100" : ""}`} />
         </div>
         ))}
         </div>

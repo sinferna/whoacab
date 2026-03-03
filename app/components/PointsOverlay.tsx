@@ -37,19 +37,19 @@ export default function PointsOverlay({ points, onClose }: Props) {
         <p className={`text-white text-3xl ${gluten.className}`}>
 					You earned
 				</p>
-				<div className="flex items-baseline gap-3">
+				<div className="flex items-baseline gap-4">
 					<p className={`text-[#FF9600] text-8xl font-bold ${gluten.className}`}>
 						{displayedPoints}
 					</p>
-					<p className={`text-white text-3xl tracking-widest ${gluten.className}`}>
+					<p className={`text-[#9588FF] text-4xl tracking-widest ${gluten.className}`}>
 						points
 					</p>
 				</div>
 
         <div className="mt-4 flex flex-col items-center gap-3">
-          <p className={`text-white text-m mb-2 text-center max-w-[400px] ${instrumentSans.className}`}>
+          <p className={`text-white text-m mb-2 text-center max-w-[420px] ${instrumentSans.className}`}>
             Login to start tracking your points and streaks, and compete on the global leaderboard!
-            </p>
+          </p>
           <button
             className={`px-8 py-3 rounded-full bg-[#9588FF] border border-[#6F5DFF] border-b-3 text-white text-lg cursor-pointer hover:bg-[#A99EFF] transition-colors ${gluten.className}`}
             onClick={() => {/* hook up login later */}}

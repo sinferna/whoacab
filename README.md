@@ -54,11 +54,9 @@ The goal is to make learning feel like a game... not homework.
 
 ---
 
----
-
 ## Current Progress
 
-### Phase 1 — Frontend Logic Implementation (Completed)
+### Frontend Logic Implementation
 
 The foundational interactive layer of Whoacab has been implemented using a hardcoded word and quiz flow to validate the full user experience before integrating backend systems.
 
@@ -86,7 +84,7 @@ This ensures the full learning loop works end-to-end before database integration
 - Custom button states
 - Difficulty tier visual differentiation
 - Responsive layout structure
-- Styled feedback states (correct / incorrect)
+- Styled feedback states (correct/incorrect)
 
 #### Validation Layer
 - Prevents submission without selecting an answer
@@ -116,6 +114,59 @@ This phase validates:
 Next step: Transition from hardcoded state to database-backed daily word system.
 
 ---
+## Planned Technical Roadmap
+
+### User System
+- Authentication (OAuth + email)  
+- Role-based access (admin / reviewer / user)  
+- Persistent streak tracking  
+- Historical performance analytics  
+- User progression metrics (accuracy rate, difficulty trends)  
+
+### Word & Content Database
+Structured word schema:
+- Word  
+- Definition  
+- Part of speech  
+- Difficulty classification  
+- Example sentences  
+- Metadata tags (academic, literary, business, etc.)  
+
+Additional tables:
+- Daily word assignment log  
+- Word performance analytics (success rates by difficulty)  
+
+---
+
+## AI-Powered Word Curation Pipeline (Planned)
+
+A semi-automated NLP pipeline to scale vocabulary creation while maintaining quality control.
+
+### 1. Corpus Ingestion
+- Academic texts  
+- News articles  
+- Literature  
+- Standardized test vocabulary sources  
+
+### 2. Candidate Extraction
+- Frequency analysis  
+- Difficulty modeling  
+- Semantic clustering  
+
+### 3. Context Generation
+- LLM-assisted example sentence generation  
+- Distractor sentence creation  
+- Automated difficulty calibration scoring  
+
+### 4. Human Review Layer
+- Admin dashboard for approval  
+- Quality control tagging  
+- Bias and clarity review  
+- Final publish toggle  
+
+This hybrid AI + manual review system ensures scalability without sacrificing accuracy or academic integrity.
+
+---
 
 ## Long-Term Vision
 
@@ -124,6 +175,15 @@ Next step: Transition from hardcoded state to database-backed daily word system.
 - Microtransactions for access to more words daily
 - Expansion to different subjects (e.g. biology, math, history, etc.)
 - Mobile-native deployment  
+
+---
+
+## Status
+
+Currently under development.  
+**Target release: Fall 2026**
+
+---
 
 ## License
 
