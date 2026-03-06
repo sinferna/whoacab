@@ -5,8 +5,11 @@ import { useAuth } from "./useAuth";
 export interface Profile {
   username: string;
   country: string | null;
+  country_code: string | null;
   points: number;
   created_at: string;
+  avatar_url: string | null;
+  preferred_difficulty: string | null;
 }
 
 export function useProfile() {
@@ -19,7 +22,7 @@ export function useProfile() {
 
     supabase
       .from("users")
-      .select("username, country, points, created_at")
+      .select("username, country, country_code, points, created_at, avatar_url, preferred_difficulty")
       .eq("id", user.id)
       .single()
       .then(({ data }) => {

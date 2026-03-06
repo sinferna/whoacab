@@ -4,6 +4,7 @@ import { supabase } from "../supabase";
 export interface LeaderboardEntry {
   username: string;
   country: string | null;
+  country_code: string | null;
   points: number;
 }
 
@@ -15,7 +16,7 @@ export function useLeaderboard() {
     async function fetch() {
       const { data, error } = await supabase
         .from("users")
-        .select("username, country, points")
+        .select("username, country, country_code, points")
         .order("points", { ascending: false })
         .limit(20);
 

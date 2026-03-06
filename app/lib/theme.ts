@@ -8,7 +8,7 @@ export const difficultyBadgeStyles = {
 };
 
 export const wordCardStyles = {
-  base: "bg-[#D9D4FF] rounded-2xl p-4 px-6 border-b-3 border border-[#9588ff]",
+  base: "bg-[#D9D4FF] rounded-2xl p-4 px-6 mx-2 border-b-3 border border-[#9588ff]",
   header: "flex justify-between items-center",
   word: "text-2xl text-black font-serif font-bold",
   phonetic: "text-black font-serif",
