@@ -55,11 +55,11 @@ export default function OptionItem({
       onMouseLeave={() => setPressed(false)}
     >
       <div className={`${optionStyles.badgeBase} ${badgeState}`}>
-        {isCorrect && showCorrectFill && <div className="w-6 h-6 rounded-full bg-[#50C341]" />}
-        {isWrong && <div className="w-6 h-6 rounded-full bg-[#FF4C46]" />}
-        {isSelected && !isCorrect && !isWrong && <div className="w-6 h-6 rounded-full bg-[#FF9600]" />}
+        {isCorrect && showCorrectFill && <div className="w-5 h-5 rounded-full bg-[#50C341]" />}
+        {isWrong && <div className="w-5 h-5 rounded-full bg-[#FF4C46]" />}
+        {isSelected && !isCorrect && !isWrong && <div className="w-5 h-5 rounded-full bg-[#FF9600]" />}
       </div>
-      <p className={`${instrumentSans.className} text-base font-m px-0.5`}>
+      <p className={`${instrumentSans.className} text-base text-m`}>
         <span>{label}</span> {text}
       </p>
     </div>
