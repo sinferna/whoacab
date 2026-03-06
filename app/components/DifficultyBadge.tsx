@@ -1,7 +1,8 @@
 import { gluten, difficultyBadgeStyles } from "../lib/theme";
+import { Difficulty } from "../lib/types";
 
 interface Props {
-  difficulty: "EASY" | "MEDIUM" | "HARD";
+  difficulty: Difficulty;
 }
 
 export default function DifficultyBadge({ difficulty }: Props) {

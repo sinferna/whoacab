@@ -15,12 +15,12 @@ export default function QuizSelection({ question, selected, setSelected, checked
   const userGotItRight = checked && selected === question.correctIndex;
 
   return (
-    <div className="mt-8">
-      <h3 className={`text-center text-black text-xl mb-1 ${gluten.className}`}>
-        Which sentence uses it correctly?
+    <div className="mt-4 mb-6">
+      <h3 className={`text-center text-black text-lg mb-1 ${gluten.className}`}>
+        WHICH SENTENCE USES IT CORRECTLY?
       </h3>
 
-      <div className="space-y-2">
+      <div className="px-4 space-y-2">
         {question.options.map((option, index) => (
           <OptionItem 
             key={index} 

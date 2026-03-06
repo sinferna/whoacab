@@ -2,13 +2,13 @@ import { Geist, Geist_Mono, Gluten, Instrument_Sans } from "next/font/google";
 
 export const difficultyBadgeStyles = {
   wrapper: "flex justify-center",
-  badge: "bg-[#9588ff] rounded-t-full px-6 pt-8 pb-2 mt-4 text-center shadow-md",
+  badge: "bg-[#9588ff] rounded-t-full px-4 pt-6 pb-2 mt-4 text-center shadow-md",
   difficulty: "text-4xl font-bold text-red-500 drop-shadow-md/85",
   label: "text-white text-xl",
 };
 
 export const wordCardStyles = {
-  base: "bg-[#D9D4FF] rounded-2xl p-6 border-b-3 border border-[#9588ff]",
+  base: "bg-[#D9D4FF] rounded-2xl p-4 px-6 border-b-3 border border-[#9588ff]",
   header: "flex justify-between items-center",
   word: "text-2xl text-black font-serif font-bold",
   phonetic: "text-black font-serif",
@@ -27,7 +27,7 @@ export const optionStyles = {
   pressed: "translate-y-[2px] border-b-1",
 
   // badge
-  badgeBase: "w-10 ml-1 aspect-square flex-shrink-0 rounded-full border flex items-center justify-center text-m transition-all duration-150",
+  badgeBase: "w-8 ml-2 aspect-square flex-shrink-0 rounded-full border flex items-center justify-center text-m transition-all duration-150",
   badgeIdle: "border-[#AAAAAA] bg-white text-[#888] group-hover:border-[#FF9600] group-hover:text-[#FF9600]",
   badgeIdleHover: "border-[#AAAAAA] bg-white text-[#888] group-hover:border-[#FF9600] group-hover:text-[#FF9600]",
   badgeSelected: "border-[#FF9600] bg-white",
@@ -36,9 +36,9 @@ export const optionStyles = {
 };
 
 export const checkButtonStyles = {
-  base: "w-60 mt-8 p-2 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-pointer select-none transition-all duration-150 ease-out hover:bg-[#A99EFF]",
+  base: "w-50 p-1 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-pointer select-none transition-all duration-150 ease-out hover:bg-[#A99EFF]",
   pressed: "translate-y-[2px]",
-  checked: "w-60 mt-8 p-2 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-default select-none",
+  checked: "w-50 p-1 text-lg rounded-full border border-[#6F5DFF] bg-[#9588FF] text-white cursor-default select-none",
 };
 
 const geistSans = Geist({
